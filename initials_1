@@ -1,0 +1,15 @@
+def get_initials(fullname):
+    """giving a person name, returns the person's initials (upper)"""
+
+    xs = (fullname)
+    name_list = xs.split()
+
+    initials = ""
+
+    for name in name_list:    #itirate throught the names 
+        initials += name[0].upper()   #append the initials 
+
+    return initials 
+
+fullname = input("What is your full name?")
+print(get_initials(fullname))
